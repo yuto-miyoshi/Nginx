@@ -1,0 +1,15 @@
+version: '3'
+
+
+services:
+  server:
+    container_name: 'server'
+    build: ./server
+    ports:
+      - 6300:8080
+    volumes:
+      - ./logs:/var/log/nginx
+
+
+volumes:
+  logs:
