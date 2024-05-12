@@ -9,7 +9,3 @@ services:
       - 6300:8080
     volumes:
       - ./logs:/var/log/nginx
-
-
-volumes:
-  logs:
